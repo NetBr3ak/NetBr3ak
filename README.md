@@ -5,15 +5,20 @@ for Apple computers.
 
 ## Research
 
-[HSPMN](https://github.com/NetBr3ak/HSPMN): hybrid recurrent-attention language
-models (Gated DeltaNet with Native Sparse Attention) at 140M and 350M parameters,
-trained on one RTX 5090. Unpublished manuscript:
-[PDF](https://github.com/NetBr3ak/HSPMN/blob/main/paper/HSPMN_v5_draft.pdf).
+[HSPMN](https://github.com/NetBr3ak/HSPMN): Python research code for an unpublished
+manuscript on hybrid language models. It compares a learned per-token gate with a
+frozen random gate for routing between a Gated DeltaNet recurrent stream and a
+Native Sparse Attention stream. I trained models on WikiText-103 at two scales,
+140M and 350M (scale names, not exact parameter counts), on one RTX 5090.
 
-A learned per-token gate gave no significant validation-perplexity gain over a
-frozen random gate on WikiText-103, at either size (3 seeds per configuration).
-The trained gates carried 0.004 to 0.006 bits about the routing label. The
-manuscript's bound puts full routing benefit at about 0.72 bits.
+A later audit found a bug that shifted the training targets twice, so every
+recorded run learned to predict the token two places ahead, not the next token.
+The audit also found future-token access in the predictive-coding gate and
+automatic NSA block selection, and an incorrect Gated DeltaNet CPU recurrence.
+Version 5.1.0 fixes these defects; I have not yet run it at training scale
+([reproduction status](https://github.com/NetBr3ak/HSPMN#reproduction-status)).
+[Manuscript source (LaTeX)](https://github.com/NetBr3ak/HSPMN/blob/main/paper/HSPMN_v5_draft.tex),
+written before the audit.
 
 ## Products at Tenzan Logic (closed source)
 
