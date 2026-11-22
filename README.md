@@ -3,7 +3,7 @@
 I build Voxmill, an offline transcription app for Apple computers. I founded
 [Tenzan Logic](https://tenzanlogic.com/en/), which makes Voxmill and Helio.
 
-[Personal site (EN)](https://netbr3ak.github.io/) · [Personal site (PL)](https://netbr3ak.github.io/pl/) · [X](https://x.com/T3aC0d3) · [LinkedIn](https://www.linkedin.com/in/szymon-jedryczko)
+[Personal site (EN)](https://netbr3ak.github.io/) · [Personal site (PL)](https://netbr3ak.github.io/pl/) · [X](https://x.com/NetBr3ak) · [LinkedIn](https://www.linkedin.com/in/szymon-jedryczko)
 
 ## Selected open-source projects
 
