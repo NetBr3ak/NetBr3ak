@@ -11,13 +11,9 @@ I build Voxmill, an offline transcription app for Apple computers. I founded
 |---|---|
 | [hdfour](https://github.com/NetBr3ak/hdfour) | A read-only HDF4 and HDF-EOS2 reader in Rust, with Python and WebAssembly bindings. Tests compare its output with the reference HDF4 C library. [Releases](https://github.com/NetBr3ak/hdfour/releases) include Python wheels and a WebAssembly package. |
 | [BETON](https://github.com/NetBr3ak/beton) | Runs installed linters, type checkers and relevant tests after edits in Claude Code. For Python, it can follow local imports to find affected tests. [Download a release](https://github.com/NetBr3ak/beton/releases). |
-| [gba](https://github.com/NetBr3ak/gba) | A Game Boy Advance emulator in C++23 and SDL3. Tests use programs written for the emulator, without distributing game ROMs. |
-| [Planetary System Simulation](https://github.com/NetBr3ak/Planetary-System-Simulation) | A two-body gravity simulator using SciPy. Tests check energy and momentum conservation and compare the orbital period with Kepler's third law. |
 
-Other projects: [core-chat](https://github.com/NetBr3ak/core-chat), a streaming
-chat client with tests that use a stand-in model;
-[Fruitend](https://netbr3ak.github.io/fruitend/), a CSS illustration with an
-element inspector ([Polish version](https://netbr3ak.github.io/fruitend/pl/)); and [Cook Book Chronicles](https://netbr3ak.github.io/Cook-book-Chronicles/),
+Other projects: [Fruitend](https://netbr3ak.github.io/fruitend/), a CSS illustration with an
+element inspector ([Polish version](https://netbr3ak.github.io/fruitend/pl/)) and [Cook Book Chronicles](https://netbr3ak.github.io/Cook-book-Chronicles/),
 a recipe site with serving adjustments and cooking timers.
 
 ### Contribution to Astro
@@ -40,7 +36,7 @@ range.
 
 ## Research
 
-[HSPMN](https://github.com/NetBr3ak/HSPMN): Python research code for an unpublished
+[HSPMN](https://github.com/NetBr3ak/hspmn): Python research code for an unpublished
 manuscript on hybrid language models. It compares a learned per-token gate with a
 frozen random gate for routing between a Gated DeltaNet recurrent stream and a
 Native Sparse Attention stream. I trained models on WikiText-103 at two scales,
@@ -52,6 +48,6 @@ The audit also found future-token access in the predictive-coding gate and
 automatic NSA block selection, and an incorrect Gated DeltaNet CPU recurrence.
 The reference implementation in version 5.1.0 fixes these defects; I have not
 yet run it at training scale
-([reproduction status](https://github.com/NetBr3ak/HSPMN#reproduction-status)).
-[Manuscript source (LaTeX)](https://github.com/NetBr3ak/HSPMN/blob/main/paper/HSPMN_v5_draft.tex),
+([reproduction status](https://github.com/NetBr3ak/hspmn#reproduction-status)).
+[Manuscript source (LaTeX)](https://github.com/NetBr3ak/hspmn/blob/main/paper/HSPMN_v5_draft.tex),
 written before the audit.
