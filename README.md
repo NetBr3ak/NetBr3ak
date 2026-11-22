@@ -1,24 +1,23 @@
 # Szymon Jędryczko
 
-I build offline speech software for Apple computers. I founded [Tenzan Logic](https://tenzanlogic.com/en/),
-which makes Voxmill and Helio.
+I build Voxmill, an offline transcription app for Apple computers. I founded
+[Tenzan Logic](https://tenzanlogic.com/en/), which makes Voxmill and Helio.
 
-[Personal website](https://netbr3ak.github.io/) ·
-[LinkedIn](https://www.linkedin.com/in/szymon-jedryczko)
+[Personal site (EN)](https://netbr3ak.github.io/) · [Personal site (PL)](https://netbr3ak.github.io/pl/) · [X](https://x.com/T3aC0d3) · [LinkedIn](https://www.linkedin.com/in/szymon-jedryczko)
 
 ## Selected open-source projects
 
 | Project | What it does |
 |---|---|
-| [hdfour](https://github.com/NetBr3ak/hdfour) | A read-only HDF4 and HDF-EOS2 reader in Rust, with Python and WebAssembly bindings. Tests compare its output with the reference HDF4 C library. Work in progress; the bindings build from source. |
-| [BETON](https://github.com/NetBr3ak/beton) | A Claude Code plugin that runs installed linters, type checkers and selected tests after edits, then returns failures to Claude. A separate guard rejects common lint and test bypass markers. |
+| [hdfour](https://github.com/NetBr3ak/hdfour) | A read-only HDF4 and HDF-EOS2 reader in Rust, with Python and WebAssembly bindings. Tests compare its output with the reference HDF4 C library. [Releases](https://github.com/NetBr3ak/hdfour/releases) include Python wheels and a WebAssembly package. |
+| [BETON](https://github.com/NetBr3ak/beton) | Runs installed linters, type checkers and relevant tests after edits in Claude Code. For Python, it can follow local imports to find affected tests. [Download a release](https://github.com/NetBr3ak/beton/releases). |
 | [gba](https://github.com/NetBr3ak/gba) | A Game Boy Advance emulator in C++23 and SDL3. Tests use programs written for the emulator, without distributing game ROMs. |
 | [Planetary System Simulation](https://github.com/NetBr3ak/Planetary-System-Simulation) | A two-body gravity simulator using SciPy. Tests check energy and momentum conservation and compare the orbital period with Kepler's third law. |
 
 Other projects: [core-chat](https://github.com/NetBr3ak/core-chat), a streaming
 chat client with tests that use a stand-in model;
 [Fruitend](https://netbr3ak.github.io/fruitend/), a CSS illustration with an
-element inspector; and [Cook Book Chronicles](https://netbr3ak.github.io/Cook-book-Chronicles/),
+element inspector ([Polish version](https://netbr3ak.github.io/fruitend/pl/)); and [Cook Book Chronicles](https://netbr3ak.github.io/Cook-book-Chronicles/),
 a recipe site with serving adjustments and cooking timers.
 
 ### Contribution to Astro
@@ -26,6 +25,18 @@ a recipe site with serving adjustments and cooking timers.
 [withastro/astro #18660](https://github.com/withastro/astro/pull/18660), merged:
 preload variable fonts when the requested weight range is inside the file's
 range.
+
+## Products at Tenzan Logic (closed source)
+
+- [Voxmill](https://tenzanlogic.com/en/): offline transcription for Apple computers,
+  built with Rust, whisper.cpp and Core ML. 7.74% word error rate on the 758
+  read-speech clips of the Polish FLEURS test set (Voxmill Pro,
+  Whisper large-v3-turbo Q5_0, normalised text, measured by Tenzan Logic,
+  September 2026; [method and results](https://tenzanlogic.com/en/voxmill/help/#pliki)).
+  Meetings and interviews have not been measured.
+- [Helio](https://tenzanlogic.com/helio/en/): a demo that estimates energy lost
+  to solar-farm inverter outages and underperformance from the data the inverters
+  already log. It uses public data; curtailment orders in the demo are simulated.
 
 ## Research
 
@@ -44,15 +55,3 @@ yet run it at training scale
 ([reproduction status](https://github.com/NetBr3ak/HSPMN#reproduction-status)).
 [Manuscript source (LaTeX)](https://github.com/NetBr3ak/HSPMN/blob/main/paper/HSPMN_v5_draft.tex),
 written before the audit.
-
-## Products at Tenzan Logic (closed source)
-
-- [Voxmill](https://tenzanlogic.com/en/): offline transcription for Apple computers,
-  built with Rust, whisper.cpp and Core ML. 7.74% word error rate on the 758
-  read-speech clips of the Polish FLEURS test set (Voxmill Pro,
-  Whisper large-v3-turbo Q5_0, normalised text, measured by Tenzan Logic,
-  September 2026; [method and results](https://tenzanlogic.com/en/voxmill/help/#pliki)).
-  Meetings and interviews have not been measured.
-- [Helio](https://tenzanlogic.com/helio/en/): a demo that estimates energy lost
-  to solar-farm inverter outages and underperformance from the data the inverters
-  already log. It uses public data; curtailment orders in the demo are simulated.
