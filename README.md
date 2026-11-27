@@ -5,7 +5,7 @@ document search in Qdrant and local model serving with llama.cpp. At Emitel,
 I built an assistant that drafts tickets for users to review and confirm
 before submission.
 
-[Portfolio in English](https://szymonjedryczko.vercel.app/en) · [Portfolio po polsku](https://szymonjedryczko.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/szymon-jedryczko)
+[Portfolio in English](https://szymonjedryczko.vercel.app/en) · <a href="https://szymonjedryczko.vercel.app/" lang="pl">Portfolio po polsku</a> · [LinkedIn](https://www.linkedin.com/in/szymon-jedryczko)
 
 ## Selected open-source work
 
